@@ -4,7 +4,7 @@ public class QueueStatic {
     private int[] queue; // Propriedade que armazena a fila.
     private int size; // Propriedade que armazena o tamanho real da fila.
     
-    // Construror que recebe como parametro um int que representa o tamanho da lista.
+    // Construror que recebe como parametro um int que representa o tamanho da Fila.
     public QueueStatic(int size) {
         // Iniciando uma exceção caso o argumento passado seja menor ou igual a zero.
         if(size <= 0) throw new IllegalArgumentException("Invalid size arguments");
@@ -16,7 +16,7 @@ public class QueueStatic {
     
     // Fazendo override do construtor para que seja possivel omitir os parametros.
     public QueueStatic() {
-        // Chamando o contrutor e passando como parâmetro o tamanho da lista como 10.
+        // Chamando o contrutor e passando como parâmetro o tamanho da fila como 10.
         this(10);
     }
     
