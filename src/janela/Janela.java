@@ -225,7 +225,7 @@ public class Janela extends javax.swing.JFrame {
             String text = "O tamanho da fila fou alterado de " + oldCapacity + " para " + value + ".\n"; // String que será impressa nos logs
             ta_saida.setText(ta_saida.getText() + text); // Imprimindo mensagem
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(rootPane, "Digite apenas valores numéricos inteiros maiores que o tamanho da lista!", "Alerta", JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Digite apenas valores numéricos inteiros maiores que o tamanho da fila!", "Alerta", JOptionPane.INFORMATION_MESSAGE);
         } finally {
             input_capacidade.setText(""); // Limpando o campo input_capacidade
         } 
@@ -237,7 +237,7 @@ public class Janela extends javax.swing.JFrame {
 
     private void btn_getremoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_getremoveActionPerformed
         try {
-            fila.remove(); // removendo elemento da lista
+            fila.remove(); // removendo elemento da Fila
             String text = "O Primeiro elemento da fila foi removido \n";// String que será impressa nos logs
             ta_saida.setText(ta_saida.getText() + text); // Imprimindo mensagem
         } catch (IllegalStateException e) {
